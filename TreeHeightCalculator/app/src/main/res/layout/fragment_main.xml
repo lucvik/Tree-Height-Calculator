@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="lucas.viksten.app.MainActivity$PlaceholderFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Horisontellt avstånd till trädet (i meter)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/edit_distance"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:text="Vinkel mellan horisontalplanet och trädtopp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/edit_tree_top_angle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:text="Vinkel mellan horisontalplanet och trädrot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:id="@+id/edit_tree_root_angle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="20dp">
+
+            <RadioButton android:id="@+id/radio_negative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Negativ"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radio_positive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Positiv"
+                android:layout_marginLeft="10dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Räkna ut höjd"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultat:"
+            android:textSize="26sp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="10dp"/>
+
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
